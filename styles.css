@@ -1,4 +1,6 @@
-.menu {
-    display: flex;
-    flex-direction: row;
+body {
+    background: url(images/pexels-googledeepmind-25626507.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
