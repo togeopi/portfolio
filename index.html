@@ -11,7 +11,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sono:wght,MONO@200..800,0..1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a5d0e1451e.js" crossorigin="anonymous"></script>
 
     <!-- styles -->
@@ -23,6 +23,49 @@
 </head>
 
 <body>
-    <div id="nav"></div>
+    <div id="nav">
+        <div id="nav-left">
+            <h2><i class="fa-solid fa-star" id="homeBttn"></i></h3>
+            <h2><a href="#" id="abtBttn">about</a></h2>
+            <h2><a href="#" id="projBttn">projects</a></h2>
+        </div>
+        <div id="nav-right">
+            <h2><a href="https://www.linkedin.com/in/ckgutierrez/">linkedin</a></h2>
+            <h2><a href="#">resume</a></h2>
+        </div>
+        <div id="bottom-nav" class="showing">
+            <h2><a href="https://github.com/togeopi">github</a></h2>
+            <h2><a href="https://bluxyr.itch.io/">itch.io</a></h2>
+        </div>
+    </div>
+
+    <div id="start-images">
+        <img src="images/Desktop - 11.png" width="800" height="1000" alt="home page" id="bgHome" class="showing">
+        <img src="images/Desktop - 13.png" width="800" height="2000" alt="about page" id="bgAbout" class="hidden">
+    </div>
+
+    <div id="projectPage">
+        <img src="images/projectsPage.png" width="800" height="1000" alt="project page" id="bgProject" class="hidden">
+        <div id="projectNav">
+            <h2><a href="#" id="webPage">web</a></h2>
+            <h2><a href="#" id="gamePage">games</a></h2>
+        </div>
+        <div id="webHover" class="hidden">
+            <h3>projects i have created using the web. there are a mix of professional websites and personal projects.
+            i also have an <a href="https://togeopi.github.io/des157b/">archive</a></h3>
+        </div>
+
+        <div id="gameHover" class="hidden">
+            <h3>a list of the games i am most proud of, team projects and personal projects.
+            check out my itch.io for more</h3>
+        </div>
+    </div>
+
+    <div id="webProjects">
+        <h2>these projects display my expertise in designing and developing web applications. each project is unique in its own way, each project focuses on a different strength of my own.</h2>
+    </div>
+    <div id="gameProjects">
+        <h2>these projects display my expertise as a game designer. each project is unique in its own way. as each project takes on a different concept, i focus on enhancing gameplay and worldbuilding.</h2>
+    </div>
 </body>
 </html>
