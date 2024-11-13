@@ -23,7 +23,8 @@
 </head>
 
 <body>
-    <div id="nav">
+
+    <header>
         <div id="nav-left">
             <h2><i class="fa-solid fa-star" id="homeBttn"></i></h3>
             <h2><a href="#" id="abtBttn">about</a></h2>
@@ -33,6 +34,92 @@
             <h2><a href="https://www.linkedin.com/in/ckgutierrez/">linkedin</a></h2>
             <h2><a href="#">resume</a></h2>
         </div>
+    </header>
+
+    <div id="projectPage" class="hidden">
+        <!-- <img src="images/projectsPage.png" width="800" height="1000" alt="project page" id="bgProject" class="hidden"> -->
+        <div id="projectStart">
+            <h2>i like to make a lot of multimedia projects. i have gone ahead and categorized my main projects into two categories: web applications and video games. choose which is more relevant :) </h2>
+
+            <div id="projectNav">
+                <button id="webPage" type="button">web</button>
+                <button id="gamePage" type="button">games</button>
+                <button id="uiuxPage" type="button">ui/ux</button>
+            </div>
+        </div>
+        <div id="webHover" class="hidden">
+            <h3>projects i have created using the web. there are a mix of professional websites and personal projects.</h3>
+        </div>
+
+        <div id="gameHover" class="hidden">
+            <h3>a list of the games i am most proud of, team projects and personal projects.
+            check out my itch.io for more</h3>
+        </div>
+
+        <div id="webProjects" class="hidden">
+            <h1>web projects</h1>
+            <h2>these projects display my expertise in designing and developing web applications. each project is unique in its own way, each project with a different focus. check out my <a href="https://togeopi.github.io/des157b/">archive</a> for more.</h2>
+            <div id="webGrid">
+                <div id="web1">
+                    <h3>PROJECT 1</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+                <div id="web2">
+                    <h3>PROJECT 2</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+                <div id="web3">
+                    <h3>PROJECT 3</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+                <div id="web4">
+                    <h3>PROJECT 4</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+            </div>
+        </div>
+        <div id="gameProjects" class="hidden">
+            <h1>video games</h1>
+            <h2>these projects display my expertise as a game designer. each project is unique in its own way. as each project takes on a different concept, i focus on enhancing gameplay and worldbuilding.</h2>
+            <div id="gameGrid">
+                <div id="game1">
+                    <h3>PROJECT 1</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+                <div id="game2">
+                    <h3>PROJECT 2</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+                <div id="game3">
+                    <h3>PROJECT 3</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+                <div id="game4">
+                    <h3>PROJECT 4</h3>
+                    <p>small paragraph of text about the project displayed here. 2-4 sentences long</p>
+                    <img src="#" width="400" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav">
+        <!-- <div id="nav-left">
+            <h2><i class="fa-solid fa-star" id="homeBttn"></i></h3>
+            <h2><a href="#" id="abtBttn">about</a></h2>
+            <h2><a href="#" id="projBttn">projects</a></h2>
+        </div>
+        <div id="nav-right">
+            <h2><a href="https://www.linkedin.com/in/ckgutierrez/">linkedin</a></h2>
+            <h2><a href="#">resume</a></h2>
+        </div> -->
         <div id="bottom-nav" class="showing">
             <h2><a href="https://github.com/togeopi">github</a></h2>
             <h2><a href="https://bluxyr.itch.io/">itch.io</a></h2>
@@ -42,30 +129,6 @@
     <div id="start-images">
         <img src="images/Desktop - 11.png" width="800" height="1000" alt="home page" id="bgHome" class="showing">
         <img src="images/Desktop - 13.png" width="800" height="2000" alt="about page" id="bgAbout" class="hidden">
-    </div>
-
-    <div id="projectPage">
-        <img src="images/projectsPage.png" width="800" height="1000" alt="project page" id="bgProject" class="hidden">
-        <div id="projectNav">
-            <h2><a href="#" id="webPage">web</a></h2>
-            <h2><a href="#" id="gamePage">games</a></h2>
-        </div>
-        <div id="webHover" class="hidden">
-            <h3>projects i have created using the web. there are a mix of professional websites and personal projects.
-            i also have an <a href="https://togeopi.github.io/des157b/">archive</a></h3>
-        </div>
-
-        <div id="gameHover" class="hidden">
-            <h3>a list of the games i am most proud of, team projects and personal projects.
-            check out my itch.io for more</h3>
-        </div>
-    </div>
-
-    <div id="webProjects">
-        <h2>these projects display my expertise in designing and developing web applications. each project is unique in its own way, each project focuses on a different strength of my own.</h2>
-    </div>
-    <div id="gameProjects">
-        <h2>these projects display my expertise as a game designer. each project is unique in its own way. as each project takes on a different concept, i focus on enhancing gameplay and worldbuilding.</h2>
     </div>
 </body>
 </html>

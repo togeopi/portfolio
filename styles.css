@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    background-color: #DFDFDF;
 }
 
 #nav-right {
@@ -25,6 +26,7 @@ body {
     right: 0;
     z-index: 1;
     padding-right: 20px;
+    background-color: #DFDFDF;
 }
 
 #nav-left {
@@ -49,6 +51,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    padding: 5px;
 }
 
 a:hover {
@@ -72,16 +75,9 @@ a:hover {
     position: fixed;
     z-index: 0;
     overflow-y: hidden;
+    scrollbar-width: 0;
 }
 
-#bgProject {
-    width: 100%;  
-    height: 100vh;
-    object-fit: cover; 
-    position: fixed;
-    z-index: 0;
-    overflow-y: hidden;
-}
 
 #bgAbout {
     margin: auto;
@@ -101,15 +97,44 @@ a:hover {
     padding: 20px;
     contain: content;
     margin: 50px;
+    position: absolute;
+    top: 70%;       
+    left: 46%;           
+    transform: translate(-50%, -50%);
+}
+
+#projectStart {
+    margin-top: 250px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 #projectNav {
     display: flex;
     justify-content: center;
-    gap: 300px;
+    gap: 50px;
+    font-size: large;      
 }
 
-#webProjects, #gameProjects {
-    margin-left: 150px;
-    margin-right: 150px;
+button {
+    padding: 10px;
+    width: 100px;
+    text-decoration: underline;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: black;
+    cursor: pointer;
+}
+
+
+#webProjects, #gameProjects{
+    margin: 150px;
+    padding: 5px;
+    height: 500px;
+}
+
+#webGrid, #gameGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
 }
