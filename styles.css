@@ -3,6 +3,12 @@ body {
     margin: auto;
     background-color: #DFDFDF;
     text-align: justify;
+
+}
+
+p, h3 {
+    font-family: monospace;
+    font-size: 20px;
 }
 
 #nav {
@@ -21,7 +27,7 @@ body {
 }
 
 #nav-right {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
@@ -30,22 +36,11 @@ body {
 }
 
 #nav-left {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     padding-left: 20px;
-}
-
-#bottom-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding-left: 20px;
-    z-index: 1;
 }
 
 a {
@@ -74,67 +69,37 @@ a:hover {
     object-fit: cover; 
     position: fixed;
     z-index: 0;
-    overflow-y: hidden;
-    scrollbar-width: 0;
-}
-
-
-#bgAbout {
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    
 }
 
 #homeBttn {
     cursor: pointer;
 }
 
-#webHover, #gameHover {
-    background-color: black;
-    color: #DFDFDF;
-    width: 300px;
-    height: fit-content;
-    padding: 20px;
-    contain: content;
-    margin: 50px;
-    position: absolute;
-    top: 70%;       
-    left: 46%;           
-    transform: translate(-50%, -50%);
-}
-
-#projectStart {
-    margin-top: 250px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-#projectNav {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    font-size: large;      
-}
-
-button {
-    padding: 10px;
-    width: 100px;
-    text-decoration: underline;
-    border-width: 5px;
-    border-style: ridge;
-    border-color: black;
-    cursor: pointer;
+#aboutPage, #projectPage {
+    margin: auto;
+    max-width: 600px;
+    padding: 100px;
 }
 
 
-#webProjects, #gameProjects{
-    margin: 150px;
-    padding: 5px;
-    height: 500px;
+
+hr {
+    
+    height: 1px;
+    border: none;
+    border-top: 1px solid #000;
 }
 
-#webGrid, #gameGrid {
+#skills {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#web, #game, #misc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    
 }
